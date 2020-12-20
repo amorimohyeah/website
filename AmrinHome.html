@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="Amrin.css">
+<link rel="icon" href="image/fire.png"
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-aqua w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="AmrinHome.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="AmrinFamily.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Family</a>
+    <a href="AmrinGallery.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Gallery</a>
+    <a href="AmrinEducation.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Education</a>
+    <a href="AmrinContact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacts</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="AmrinHome.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="AmrinFamily,html" class="w3-bar-item w3-button w3-padding-large">Family</a>
+    <a href="AmrinGallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+    <a href="AmrinEducation.html" class="w3-bar-item w3-button w3-padding-large">Education</a>
+    <a href="AmrinContact.html" class="w3-bar-item w3-button w3-padding-large">Contacts</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-teal w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">ABOUT ME</h1>
+  <p class="w3-xlarge">MUHAMMAD AMRIN</p>
+  <a href="https://www.facebook.com/alex.amrin.5" class="fa fa-facebook-official w3-hover-opacity"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Who I Am</button></a>
+</header>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="display">
+        <div id="time" align="center"
+</div>
+</div>
+<span></span>
+      <span></span>
+    </div>
+<script>
+      setInterval(()=>{
+        const time = document.querySelector(".display #time");
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let day_night = "AM";
+        if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+        }
+        if(seconds < 10){
+          seconds = "0" + seconds;
+        }
+        if(minutes < 10){
+          minutes = "0" + minutes;
+        }
+        if(hours < 10){
+          hours = "0" + hours;
+        }
+        time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+      });
+</script>
+
+<h8><div class="audio"></h8>
+   <audio controls>
+      <source src="image/Celine Dion My Heart Will Go On.mp3" type="audio/mpeg"/>
+   </audio>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>The Purpose</h1>
+      <h5 class="w3-padding-32">The aim of this website is to allow you to get to know me better and also serve as a guide for your information concerning my personal information.</h5>
+
+      <p class="w3-text-grey">It is also specially made for IMD311 Individual assigment which requires us to create our own personal page.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-quote-right w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-quote-left w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>About Me</h1>
+            <h5 class="w3-padding-32">I am a straightforward guy, enjoying my life to the fullest.</h5>
+      
+            <p class="w3-text-grey">"Don't be afraid to try something new, you have nothing to lose to begin with is my favourite catchphrase..</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: Change the world by being yourself.</h1>
+</div>
+
+<h7><div><img src="image/amrin.jpg" style="width:10%"></div></h7>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.facebook.com/alex.amrin.5" class="fa fa-facebook-official w3-hover-opacity">Check Out My Facebook</a>
+    
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Amrin Website Template</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
